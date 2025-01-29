@@ -18,7 +18,7 @@ input[type="file"] {
   padding-bottom: 10px;
 }
 .choose:hover {
-  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+  box-shadow: rgb(61, 49, 44) 0 3px 8px;
 }
 .textArea {
   color: white;
