@@ -42,7 +42,10 @@ html {
 
 body {
   margin: 0;
-  /* background-image: url("assests/plexus-modern-background-with-abstract-low-poly-shapes.jpg"); */
+  background-image: url("assests/WhatsApp\ Image\ 2025-01-30\ at\ 00.18.52_c8ba4741.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .content {
