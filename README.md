@@ -1,29 +1,107 @@
-# Vault3
-Decentralized DApp with Secure File Storage on Pinata
+Vault3
 
-Overview
-This decentralized application (DApp) provides a secure and reliable way for users to upload and store their files on the InterPlanetary File System (IPFS) using Pinata. By utilizing blockchain technology, the DApp ensures data integrity, security, and permanence.
+Welcome to Decentralized Image Upload and Sharing, a project designed to enable secure and decentralized image storage using blockchain technology. With this platform, users can upload images and files to IPFS (InterPlanetary File System) and manage access through Ethereum smart contracts.
 
-Features
+🚀 Features
 
-Secure File Storage: Files are stored on IPFS through Pinata, ensuring they remain accessible and safe.
+✅ Decentralized Storage: Images are stored on IPFS, ensuring immutability and reliability.
+✅ Smart Contract Integration: Solidity-based contracts manage ownership and access.
+✅ Access Control: Users can grant/revoke access to specific individuals via smart contracts.
 
-Blockchain Transparency: Every transaction is recorded on the blockchain for authenticity and accountability.
+🛠 Technology Stack
 
-User-Friendly Interface: The intuitive design makes it easy to upload, retrieve, and manage files.
+Solidity → Smart contract development for ownership & access control.
 
-Smart Contract Protection: The use of smart contracts guarantees secure and trustless file handling.
+React → User-friendly front-end for uploading and managing images.
 
-Technologies Used
+IPFS → Decentralized storage protocol for secure image hosting.
 
-Frontend: React.js, Next.js (optional)
+📥 Installation Guide
 
-Backend: Node.js, Express.js
+1️⃣ Clone the repository:
 
-Blockchain: Solidity, Ethereum (or any EVM-compatible blockchain)
+git clone https://github.com/your-username/decentralized-image-upload.git
 
-Storage: Pinata (IPFS)
+2️⃣ Install dependencies for Hardhat:
 
-Smart Contract Development: Hardhat or Truffle
+# Navigate to the root directory
+cd Dgdrive3.0
+# Install required packages
+npm install
 
-Wallet Integration: MetaMask, Web3.js/Ethers.js
+3️⃣ Compile the smart contract:
+
+npx hardhat compile
+
+4️⃣ Deploy the smart contract:
+
+npx hardhat run scripts/deploy.js --network <network-name>
+
+5️⃣ Install dependencies for the React frontend:
+
+cd client
+npm install
+
+6️⃣ Start the React application:
+
+npm start
+
+⚙ Configuration
+
+🔑 API Keys
+
+Obtain Pinata API keys to interact with IPFS.
+
+Update FileUpload.js with your API keys.
+
+🦊 Metamask Setup
+
+Ensure Metamask is installed and configured in your browser.
+
+🏗 Contract Address
+
+After deployment, update the contract address in App.js inside the React app.
+
+📌 Usage Guide
+
+🔹 Upload Image Before "Get Data" → Ensure an image is uploaded on Pinata before clicking "Get Data", or an error will occur.
+
+🔹 Accessing Other Users' Images → Enter the user’s wallet address in the designated box. You’ll only gain access if they’ve granted permission via the smart contract.
+
+🔹 Managing Access → Users can revoke access at any time using the smart contract controls.
+
+🛠 Troubleshooting
+
+❌ "You don't have access" Error? → Make sure:
+
+The image is uploaded before fetching data.
+
+The contract address is correctly set.
+
+You have the necessary access permissions.
+
+👥 Contributing
+
+We welcome contributions! 🚀 To contribute:
+
+Fork the repository
+
+Create a new branch (feature/your-feature-name)
+
+Make your changes & ensure all tests pass
+
+Submit a pull request with a detailed description
+
+📜 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+📬 Contact
+
+For any queries or suggestions, feel free to reach out:
+
+Email: kritikaaggarwal19@gmail.com , khushiloginto@gmail.com
+
+Twitter: @Kr88722Aggarwal,https://x.com/Khushi606272132
+
+🚀 Enjoy Decentralized Image Sharing! 🚀
