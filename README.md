@@ -25,7 +25,7 @@ git clone https://github.com/your-username/decentralized-image-upload.git
 2️⃣ Install dependencies for Hardhat:
 
 # Navigate to the root directory
-cd Dgdrive3.0
+cd vault3
 # Install required packages
 npm install
 
