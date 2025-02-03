@@ -92,19 +92,6 @@ Make sure:
 - The contract address is correctly set.
 - You have the necessary access permissions.
 
-## 👥 Contributing
-
-We welcome contributions! 🚀 To contribute:
-
-1. Fork the repository
-2. Create a new branch (`feature/your-feature-name`)
-3. Make your changes & ensure all tests pass
-4. Submit a pull request with a detailed description
-
-## 📜 License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ## 📬 Contact
 
 For any queries or suggestions, feel free to reach out:
@@ -113,5 +100,4 @@ For any queries or suggestions, feel free to reach out:
 - Twitter: [@Kr88722Aggarwal](https://x.com/Kr88722Aggarwal), [Khushi606272132](https://x.com/Khushi606272132)
 
 🚀 Enjoy Decentralized Image Sharing! 🚀
-```
 
