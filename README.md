@@ -1,105 +1,115 @@
-Vault3
+
+```markdown
+# Vault3
 
 Welcome to Decentralized Image Upload and Sharing, a project designed to enable secure and decentralized image storage using blockchain technology. With this platform, users can upload images and files to IPFS (InterPlanetary File System) and manage access through Ethereum smart contracts.
 
-🚀 Features
+## 🚀 Features
 
-✅ Decentralized Storage: Images are stored on IPFS, ensuring immutability and reliability.
-✅ Smart Contract Integration: Solidity-based contracts manage ownership and access.
+✅ Decentralized Storage: Images are stored on IPFS, ensuring immutability and reliability.  
+✅ Smart Contract Integration: Solidity-based contracts manage ownership and access.  
 ✅ Access Control: Users can grant/revoke access to specific individuals via smart contracts.
 
-🛠 Technology Stack
+## 🛠 Technology Stack
 
-Solidity → Smart contract development for ownership & access control.
+- **Solidity** → Smart contract development for ownership & access control.  
+- **React** → User-friendly front-end for uploading and managing images.  
+- **IPFS** → Decentralized storage protocol for secure image hosting.  
 
-React → User-friendly front-end for uploading and managing images.
+## 📥 Installation Guide
 
-IPFS → Decentralized storage protocol for secure image hosting.
+1️⃣ **Clone the repository:**
 
-📥 Installation Guide
+```sh
+git clone <repository-url>
+```
 
-1️⃣ Clone the repository:
+2️⃣ **Install dependencies for Hardhat:**
 
-2️⃣ Install dependencies for Hardhat:
-
+```sh
 # Navigate to the root directory
 cd vault3
 # Install required packages
 npm install
+```
 
-3️⃣ Compile the smart contract:
+3️⃣ **Compile the smart contract:**
 
+```sh
 npx hardhat compile
+```
 
-4️⃣ Deploy the smart contract:
+4️⃣ **Deploy the smart contract:**
 
+```sh
 npx hardhat run scripts/deploy.js --network <network-name>
+```
 
-5️⃣ Install dependencies for the React frontend:
+5️⃣ **Install dependencies for the React frontend:**
 
+```sh
 cd client
 npm install
+```
 
-6️⃣ Start the React application:
+6️⃣ **Start the React application:**
 
+```sh
 npm start
+```
 
-⚙ Configuration
+## ⚙ Configuration
 
-🔑 API Keys
+### 🔑 API Keys
 
 Obtain Pinata API keys to interact with IPFS.
 
-Update FileUpload.js with your API keys.
+Update `FileUpload.js` with your API keys.
 
-🦊 Metamask Setup
+### 🦊 Metamask Setup
 
 Ensure Metamask is installed and configured in your browser.
 
-🏗 Contract Address
+### 🏗 Contract Address
 
-After deployment, update the contract address in App.js inside the React app.
+After deployment, update the contract address in `App.js` inside the React app.
 
-📌 Usage Guide
+## 📌 Usage Guide
 
-🔹 Upload Image Before "Get Data" → Ensure an image is uploaded on Pinata before clicking "Get Data", or an error will occur.
+- **Upload Image Before "Get Data"** → Ensure an image is uploaded on Pinata before clicking "Get Data", or an error will occur.
+- **Accessing Other Users' Images** → Enter the user’s wallet address in the designated box. You’ll only gain access if they’ve granted permission via the smart contract.
+- **Managing Access** → Users can revoke access at any time using the smart contract controls.
 
-🔹 Accessing Other Users' Images → Enter the user’s wallet address in the designated box. You’ll only gain access if they’ve granted permission via the smart contract.
+## 🛠 Troubleshooting
 
-🔹 Managing Access → Users can revoke access at any time using the smart contract controls.
+### ❌ "You don't have access" Error? 
 
-🛠 Troubleshooting
+Make sure:
 
-❌ "You don't have access" Error? → Make sure:
+- The image is uploaded before fetching data.
+- The contract address is correctly set.
+- You have the necessary access permissions.
 
-The image is uploaded before fetching data.
-
-The contract address is correctly set.
-
-You have the necessary access permissions.
-
-👥 Contributing
+## 👥 Contributing
 
 We welcome contributions! 🚀 To contribute:
 
-Fork the repository
+1. Fork the repository
+2. Create a new branch (`feature/your-feature-name`)
+3. Make your changes & ensure all tests pass
+4. Submit a pull request with a detailed description
 
-Create a new branch (feature/your-feature-name)
-
-Make your changes & ensure all tests pass
-
-Submit a pull request with a detailed description
-
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-📬 Contact
+## 📬 Contact
 
 For any queries or suggestions, feel free to reach out:
 
-Email: kritikaaggarwal19@gmail.com , khushiloginto@gmail.com
-
-Twitter: @Kr88722Aggarwal,https://x.com/Khushi606272132
+- Email: kritikaaggarwal19@gmail.com, khushiloginto@gmail.com
+- Twitter: [@Kr88722Aggarwal](https://x.com/Kr88722Aggarwal), [Khushi606272132](https://x.com/Khushi606272132)
 
 🚀 Enjoy Decentralized Image Sharing! 🚀
+```
+
