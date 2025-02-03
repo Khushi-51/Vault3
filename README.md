@@ -20,8 +20,6 @@ IPFS → Decentralized storage protocol for secure image hosting.
 
 1️⃣ Clone the repository:
 
-git clone https://github.com/your-username/decentralized-image-upload.git
-
 2️⃣ Install dependencies for Hardhat:
 
 # Navigate to the root directory
