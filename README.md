@@ -1,8 +1,10 @@
 
-```markdown
 # Vault3
+```markdown
 
-Welcome to Decentralized Image Upload and Sharing, a project designed to enable secure and decentralized image storage using blockchain technology. With this platform, users can upload images and files to IPFS (InterPlanetary File System) and manage access through Ethereum smart contracts.
+Welcome to Decentralized Image Upload and Sharing, a project designed to enable secure and decentralized
+image storage using blockchain technology. With this platform, users can upload images and files to IPFS
+(InterPlanetary File System) and manage access through Ethereum smart contracts.
 
 ## 🚀 Features
 
