@@ -1,85 +1,92 @@
+
 .modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
   width: 100vw;
-  height: 100vw;
-  background-color: rgba(0, 0, 0, 0.306);
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
 }
 
 .modalContainer {
   width: 500px;
-  height: 200px;
-  border-radius: 12px;
-  background-color: rgba(255, 255, 255,0.5);
-  border: 2px solid black;
-  box-shadow: rgba(0, 0, 0) 0px 5px 15px;
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-}
-
-.modalContainer {
-  display: inline-block;
-  text-align: center;
-}
-.title {
-  display: inline-block;
-  text-align: center;
-}
-
-.titleCloseBtn {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.titleCloseBtn button {
-  background-color: transparent;
-  border: none;
-  font-size: 1px;
-  cursor: pointer;
-}
-
-.modalContainer .body {
-  flex: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.7rem;
-  text-align: center;
-}
-
-.modalContainer .footer {
-  flex: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modalContainer .footer button {
-  width: 100px;
-  height: 35px;
-  margin: 10px;
-  border: none;
-  background-color: cornflowerblue;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 30px;
   color: white;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
 }
 
-#cancelBtn {
-  background-color: crimson;
-}
-.address {
-  display: block;
-  margin: auto;
-  height: 30px;
-  width: 330px;
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-input[type="text"]:focus {
-  background-color: lightblue;
+.body {
+  margin: 20px 0;
+}
+
+.body input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+}
+
+.access-list {
+  margin: 20px 0;
+}
+
+.access-list select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.footer button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.footer button:first-child {
+  background: linear-gradient(135deg, #ff4b4b, #ff6b6b);
+  color: white;
+}
+
+.footer button:last-child {
+  background: linear-gradient(135deg, #4a6cf7, #6e8efb);
+  color: white;
+}
+
+.footer button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }

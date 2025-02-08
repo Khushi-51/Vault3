@@ -1,27 +1,52 @@
+
 import { useEffect } from "react";
 import "./Modal.css";
+
 const Modal = ({ setModalOpen, contract }) => {
   const sharing = async () => {
-    const address = document.querySelector(".address").value;
-    await contract.allow(address);
-    setModalOpen(false);
+    try {
+      const address = document.querySelector(".address").value;
+      if (!address || !contract) {
+        alert("Please enter a valid address");
+        return;
+      }
+      await contract.allow(address);
+      setModalOpen(false);
+    } catch (error) {
+      console.error("Error sharing access:", error);
+      alert("Error sharing access. Please try again.");
+    }
   };
+
   useEffect(() => {
     const accessList = async () => {
-      const addressList = await contract.shareAccess();
-      let select = document.querySelector("#selectNumber");
-      const options = addressList;
+      try {
+        if (!contract) return;
+        const addressList = await contract.shareAccess();
+        let select = document.querySelector("#selectNumber");
+        if (!select) return;
 
-      for (let i = 0; i < options.length; i++) {
-        let opt = options[i];
-        let e1 = document.createElement("option");
-        e1.textContent = opt;
-        e1.value = opt;
-        select.appendChild(e1);
+        // Clear existing options
+        while (select.options.length > 1) {
+          select.remove(1);
+        }
+
+        addressList.forEach((address) => {
+          if (address.access) {
+            const option = document.createElement("option");
+            option.value = address.user;
+            option.textContent = address.user;
+            select.appendChild(option);
+          }
+        });
+      } catch (error) {
+        console.error("Error fetching access list:", error);
       }
     };
+
     contract && accessList();
   }, [contract]);
+
   return (
     <>
       <div className="modalBackground">
@@ -40,19 +65,15 @@ const Modal = ({ setModalOpen, contract }) => {
             </select>
           </form>
           <div className="footer">
-            <button
-              onClick={() => {
-                setModalOpen(false);
-              }}
-              id="cancelBtn"
-            >
+            <button onClick={() => setModalOpen(false)} id="cancelBtn">
               Cancel
             </button>
-            <button onClick={() => sharing()}>Share</button>
+            <button onClick={sharing}>Share</button>
           </div>
         </div>
       </div>
     </>
   );
 };
+
 export default Modal;
